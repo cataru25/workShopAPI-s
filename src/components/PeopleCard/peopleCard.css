@@ -1,0 +1,10 @@
+.peopleCard {
+    background-color: gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3%;
+    width: 25%;
+
+}
