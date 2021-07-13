@@ -5,9 +5,11 @@ class PeopleCard extends Component {
     render() {
         return (
             <div className="peopleCard">
-                <span>Name: {this.props.name}</span>
-                <span>Birth Year: {this.props.birth_year}</span>
-                <span>Gender: {this.props.gender}</span>
+                <div className="description">
+                    <p className="paragraph">Name: {this.props.name}</p >
+                    <p className="paragraph">Birth Year: {this.props.birth_year}</p >
+                    <p className="paragraph">Gender: {this.props.gender}</p >
+                </div>
             </div>
         );
     }
