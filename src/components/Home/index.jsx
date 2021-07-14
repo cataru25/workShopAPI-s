@@ -1,6 +1,7 @@
 import React, { Component }  from 'react'
 import Swapi from '../Swapi/index'
 import Pokemon from '../Pokemon/index'
+import RickAndMorty from '../RickAndMorty'
 import './home.css'
 
 class Home extends Component {
@@ -11,6 +12,7 @@ class Home extends Component {
                     <h1>HOME</h1>
                     <Swapi />
                     <Pokemon />
+                    <RickAndMorty />
                 </div>
             </div>
         )
