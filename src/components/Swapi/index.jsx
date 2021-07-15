@@ -1,26 +1,26 @@
 import React, { Component } from 'react'
 import './swapi.css'
 import Card from '../Card/index';
-const SWAPI_URL = 'https://swapi.dev/api/';
+// const SWAPI_URL = 'https://swapi.dev/api/';
 
 class Swapi extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            people: []
-        }
+        // this.state = {
+        //     people: []
+        // }
     }
 
     componentDidMount() {
-        const endpoint = SWAPI_URL + 'people/';
-        fetch(endpoint)
-            .then(res => res.json())
-            .then(data => {
-                console.log('@data: ', data)
-                const results = data && data.results || [];
-                console.log('@results: ', results);
-                this.setState({ people: results });
-            });
+        // const endpoint = SWAPI_URL + 'people/';
+        // fetch(endpoint)
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         // console.log('@data: ', data)
+        //         const results = data && data.results || [];
+        //         // console.log('@results: ', results);
+        //         this.setState({ people: results });
+        //     });
     }
 
     render(){
@@ -31,7 +31,7 @@ class Swapi extends Component {
                 </div>
                 <section className="app__people">
                     {
-                        this.state.people.map((p, index) => {
+                        this.props.people.map((p, index) => {
                             return (
                                 <Card name={p.name}
                                     birth_year={p.birth_year}
