@@ -3,6 +3,11 @@
     margin: 0;
     /* border: 1px solid black; */
 }
-.container{
-    /* margin: 0.5rem; */
+.container {
+    text-align: center;
+}
+.title-home{
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 1%;
 }

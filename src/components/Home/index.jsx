@@ -9,7 +9,7 @@ class Home extends Component {
         return (
             <div className="container">
                 <div className="container">
-                    <h1>HOME</h1>
+                    <h1 className="title-home">WORKSHOP APIs</h1>
                     <Swapi />
                     <Pokemon />
                     <RickAndMorty />
