@@ -13,12 +13,13 @@ class Card extends Component {
     //     gender: "",
     // }
     render() {
+        const { name, birth_year, gender } = this.props;
         return (
             <div className="peopleCard">
                 <div className="description">
-                    <p className="paragraph">Name: {this.props.name}</p >
-                    <p className="paragraph">Birth Year: {this.props.birth_year}</p >
-                    <p className="paragraph">Gender: {this.props.gender}</p >
+                    {name && <p className="paragraph">Name: {name}</p >}
+                    {birth_year && <p className="paragraph">Birth Year: {birth_year}</p>}
+                    {gender && <p className="paragraph">Gender: {gender}</p >}
                 </div>
             </div>
         );
