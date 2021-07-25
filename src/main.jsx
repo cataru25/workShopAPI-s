@@ -5,9 +5,9 @@ import AppRouter from './components/AppRouter'
 
 ReactDOM.render(
   <React.StrictMode>
-  <BrowserRouter>
-    <AppRouter />
-  </BrowserRouter>
+    <BrowserRouter>
+        <AppRouter />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 )

@@ -1,0 +1,13 @@
+.footer {
+    align-items: center;
+    background-color: papayawhip;
+    display: flex;
+    height: 80px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer__twitter, .footer__copyright, .footer__support {
+    color: #000;
+    font-size: 14px;
+}
