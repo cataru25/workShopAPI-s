@@ -15,7 +15,7 @@ class Header extends Component {
 
     onClick = (activeOption, pathOption) => {
         this.setState({activeOption: activeOption});
-        this.props.history(pathOption);
+        this.props.history.push(pathOption);
     }
 
     render() {
