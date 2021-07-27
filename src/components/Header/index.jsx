@@ -27,10 +27,10 @@ class Header extends Component {
                             headerOptions.map((hopt, index) => {
                                 return(
                                     <HeaderOption activeOption={this.state.activeOption}
-                                    onClick={this.onClick}
+                                    onClick ={this.onClick}
                                     optionText={hopt.optionText}
                                     option={hopt.option}
-                                    path={hopt.path}
+                                    path={hopt.optionPath}
                                     key={index}/>
                                 );
                             })
